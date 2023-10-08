@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweatshirts</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    <div class="logo container">Sweatshirts</div>
+    <div class="container">
+        <div class="controls">
+            <div class="form">
+                <form id="add_form">
+                    <h3>Create the product</h3>
+                    <div class="form_tittle_part">
+                        <label for="exampleInputEmail1" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title_input" />
+                    </div>
+                    <div class="form_price_part">
+                        <label for="exampleInputPassword1" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="price_input" />
+                    </div>
+                    <button id="submit_button" type="submit" class="btn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="find_sweatshirt ">
+                <h4>Find sweatshirt</h4>
+                <input id="find_input" type="text" class="form-control" />
+                <button id="find_button" type="button" class="btn">
+                Find
+                </button>
+            </div>
+            <div class="prices_summ ">
+                <h4>Summ the prices</h4>
+                <button id="summ_button" type="button" class="btn">
+                Summ up
+                </button>
+            </div>
+            <div class="sort_by_prices ">
+                <h4>Sort by prices</h4>
+                <button id="sort_button" type="button" class="btn">
+                Sort
+                </button>
+            </div>
+        </div>
+        <ul id="items-container">
+        </ul>
+    </div>
+    <script type="module" src="./js/product_creation.js"></script>
+</body>
+</html>
