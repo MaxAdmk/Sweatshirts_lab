@@ -8,25 +8,18 @@
     <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-    <div class="logo container">Sweatshirts</div>
+    <header class="header container">
+        <div class="logo container">Sweatshirts</div>
+        <nav>
+            <ul>
+                <li><button class="nav-button home_page">Home</button></li>
+                <li><button class="nav-button create_page">Create</button></li>
+                <li><button class="nav-button edit_page">Edit</button></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div class="controls">
-            <div class="form">
-                <form id="add_form">
-                    <h3>Create the product</h3>
-                    <div class="form_tittle_part">
-                        <label for="exampleInputEmail1" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title_input" />
-                    </div>
-                    <div class="form_price_part">
-                        <label for="exampleInputPassword1" class="form-label">Price</label>
-                        <input type="text" class="form-control" id="price_input" />
-                    </div>
-                    <button id="submit_button" type="submit" class="btn">
-                        Submit
-                    </button>
-                </form>
-            </div>
             <div class="find_sweatshirt ">
                 <h4>Find sweatshirt</h4>
                 <input id="find_input" type="text" class="form-control" />
@@ -48,19 +41,12 @@
             </div>
         </div>
         <ul id="items-container">
-            <!-- <li id="" class="product">
-                <img src="./img/Hoodie.png" alt="hoodie img" class="item_image">
-                <div class="product_body">
-                    <h5 class="product_title">Sweatshirt</h5>
-                    <p class="product_price">1000</p>
-                    <div class="product_buttons">
-                        <button class="delete_button">Delete</button>
-                        <button class="edit_button">Edit</button>
-                    </div>
-                </div>
-            </li> -->
         </ul>
     </div>
-    <script type="module" src="./js/product_creation.js"></script>
+    <script type="module" src="./js/summ_up.js"></script>
+    <script src="./js/local_storage_loading_main.js"></script>
+    <script src="./js/find.js"></script>
+    <script type="module" src="./js/sort.js"></script>
+    <script src="./js/page_loading.js"></script>
 </body>
 </html>
